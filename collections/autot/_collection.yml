@@ -1,0 +1,37 @@
+# Autot. Sovellus rakentaa listan ja lomakkeen näistä kentistä.
+name: Autot
+icon: car.fill
+color: teal
+group: Autot
+view: list
+id: slug
+title: merkki
+subtitle: [malli, vuosimalli]
+sort: merkki
+body_label: Muistiinpanot
+
+fields:
+  - key: merkki
+    type: text
+    label: Merkki
+    required: true
+  - key: malli
+    type: text
+    label: Malli
+    required: true
+  - key: mittarilukema
+    type: number
+    label: Mittarilukema
+    unit: km
+    integer: true
+    min: 0
+    help: Lukema kilometreinä
+  - key: vuosimalli
+    type: number
+    label: Vuosimalli
+    integer: true
+    min: 1886
+    max: 2100
+  - key: vari
+    type: text
+    label: Väri
